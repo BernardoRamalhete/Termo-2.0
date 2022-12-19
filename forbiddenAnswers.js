@@ -5,4 +5,6 @@ emulo
 melam
 sebes
 rugai
+rajou
+rajar
 `.split('\n')
