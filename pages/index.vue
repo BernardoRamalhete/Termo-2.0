@@ -270,7 +270,7 @@ async function validateLine(line) {
 function handleInputChange(line, input, e) {
     if(e.key !== 'Enter') {
         const currentLineElement= document.querySelector(`.line-${line}`)
-         if(e.target.value !== '' && e.keyCode != '37' && e.keyCode != '39') {
+         if(e.target.value !== '' && e.keyCode != '37' && e.keyCode != '39' && e.key !== 'Backspace') {
             if(input < 5) {
                 currentLineElement.querySelector(`.input-${input + 1}`).focus()
             }
